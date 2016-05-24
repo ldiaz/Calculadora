@@ -54,14 +54,22 @@
 		A7A949EC1CF4E88B00E83A6E /* Calculadora */ = {
 			isa = PBXGroup;
 			children = (
-				A7A949ED1CF4E88B00E83A6E /* AppDelegate.swift */,
 				A7A949EF1CF4E88B00E83A6E /* ViewController.swift */,
 				A7A949F11CF4E88B00E83A6E /* Main.storyboard */,
+				A7A949FF1CF4F0DC00E83A6E /* Archivos Auxiliares */,
+			);
+			path = Calculadora;
+			sourceTree = "<group>";
+		};
+		A7A949FF1CF4F0DC00E83A6E /* Archivos Auxiliares */ = {
+			isa = PBXGroup;
+			children = (
+				A7A949ED1CF4E88B00E83A6E /* AppDelegate.swift */,
 				A7A949F41CF4E88B00E83A6E /* Assets.xcassets */,
 				A7A949F61CF4E88B00E83A6E /* LaunchScreen.storyboard */,
 				A7A949F91CF4E88B00E83A6E /* Info.plist */,
 			);
-			path = Calculadora;
+			name = "Archivos Auxiliares";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculadora/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayorgafirm.oss.swift.jdiaz.Calculadora;
@@ -262,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculadora/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mayorgafirm.oss.swift.jdiaz.Calculadora;
