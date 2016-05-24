@@ -14,7 +14,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var pantalla: UILabel!
     
     // En programacion "Naming is everything", no se especifica el tipo por que el compilador puede determinar el tipo de dato automaticamente
-    var usuarioEstaEnLaMitadDeEscritura = false;
+    private var usuarioEstaEnLaMitadDeEscritura = false;
+    
+    //Propiedad calculada para no estar haciendo "Casting" (String->Double y Double->String) al obtener y fijar el valor en la pantalla durante la ejecucion de una operacion
+    private var valorEnPantalla: Double {
+        get {
+            return Double(pantalla.text!)!
+        }
+        set {
+            pantalla.text = String(newValue)
+        }
+    }
+    
+    //La logica de la calculadora esta en la clase CerebroCalculadora
+    private var cerebro = CerebroCalculadora()
 
     @IBAction func botonDigitoPresionado(sender: UIButton) {
         //Se extrae el valor asociado del Optional(String) retornado por sender.currentTitle
@@ -33,15 +46,28 @@ class ViewController: UIViewController {
     }
     
     @IBAction func operacionPresionada(sender: UIButton) {
-        //una vez presionada una operacion no se concatena el siguiente boton presionado a la pantalla
-        usuarioEstaEnLaMitadDeEscritura = false
-        
-        if let operacionMatematica = sender.currentTitle {
-            if operacionMatematica == "π" {
-                pantalla.text = String(M_PI)
-            }
+        //Si el usuario escribe un numero y luego presiona una operacion se le informa al cerebro
+        // para que lo tenga en cuenta y luego de ejecutar el igual u otra operacion vaya realizando el calculo
+        if usuarioEstaEnLaMitadDeEscritura {
+            usuarioEstaEnLaMitadDeEscritura = false
+            
+            cerebro.fijarOperando(valorEnPantalla)
         }
+        
+        //El cerebro determina el tipo de operacion que tiene que hacer con el operando anterior
+        if let operacionMatematica = sender.currentTitle {
+            cerebro.ejecutarOperacion(operacionMatematica)
+        }
+        
+        //en cualquier caso el cerebro siempre tiene el resultado de la ultima operacion ejecutada
+        valorEnPantalla = cerebro.resultado
     }
 
 }
+
+
+
+
+
+
 

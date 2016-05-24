@@ -12,6 +12,7 @@
 		A7A949F31CF4E88B00E83A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A949F11CF4E88B00E83A6E /* Main.storyboard */; };
 		A7A949F51CF4E88B00E83A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A949F41CF4E88B00E83A6E /* Assets.xcassets */; };
 		A7A949F81CF4E88B00E83A6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A949F61CF4E88B00E83A6E /* LaunchScreen.storyboard */; };
+		A7A94A011CF4FF9200E83A6E /* CerebroCalculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A94A001CF4FF9200E83A6E /* CerebroCalculadora.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A7A949F41CF4E88B00E83A6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7A949F71CF4E88B00E83A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7A949F91CF4E88B00E83A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A94A001CF4FF9200E83A6E /* CerebroCalculadora.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CerebroCalculadora.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A7A949EF1CF4E88B00E83A6E /* ViewController.swift */,
 				A7A949F11CF4E88B00E83A6E /* Main.storyboard */,
+				A7A94A001CF4FF9200E83A6E /* CerebroCalculadora.swift */,
 				A7A949FF1CF4F0DC00E83A6E /* Archivos Auxiliares */,
 			);
 			path = Calculadora;
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A94A011CF4FF9200E83A6E /* CerebroCalculadora.swift in Sources */,
 				A7A949F01CF4E88B00E83A6E /* ViewController.swift in Sources */,
 				A7A949EE1CF4E88B00E83A6E /* AppDelegate.swift in Sources */,
 			);
@@ -298,6 +302,7 @@
 				A7A949FE1CF4E88B00E83A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

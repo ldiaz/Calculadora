@@ -145,6 +145,76 @@
                                     <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="99k-6h-IbR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4U-fa-uhT">
+                                <rect key="frame" x="10" y="131" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="x"/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Q4-Z1-vZx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElP-4d-iZO">
+                                <rect key="frame" x="94" y="131" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="/"/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oe6-3x-rUg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhh-iD-ZUY">
+                                <rect key="frame" x="181" y="131" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sU-5w-Vxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6I-rj-LlH">
+                                <rect key="frame" x="10" y="269" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="℮"/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ty-AH-6wl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RG-s7-81d">
+                                <rect key="frame" x="10" y="344" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="±"/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnQ-cN-xtg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjL-yH-zgn">
+                                <rect key="frame" x="10" y="417" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="√"/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XW6-BW-Jmd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jY-Ms-PEm">
+                                <rect key="frame" x="267" y="417" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rLl-Ye-6SK"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKg-HQ-MY0">
                                 <rect key="frame" x="181" y="417" width="66" height="58"/>
                                 <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,6 +223,16 @@
                                 <state key="normal" title="0"/>
                                 <connections>
                                     <action selector="botonDigitoPresionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sV-aR-SiS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wc-8u-uSE">
+                                <rect key="frame" x="267" y="131" width="66" height="58"/>
+                                <color key="backgroundColor" white="0.92022360560000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <size key="titleShadowOffset" width="64" height="64"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="operacionPresionada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2f0-f8-Z1w"/>
                                 </connections>
                             </button>
                         </subviews>
