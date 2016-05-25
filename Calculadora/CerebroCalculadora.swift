@@ -44,12 +44,46 @@ class CerebroCalculadora {
         var primerOperando: Double
     }
     
+    //almacena el programa actual (almacena el programa, contiene un Double si es un numero o String si es una operacion)
+    //Array por su tipo se transmite por valor, es decir que si lo retorno a alguien mas, estoy retornando una copia
+    private var programaInternoActual = [AnyObject]()
+    
+    //propiedad calculada (computed property)
+    typealias ListaDePropiedades = AnyObject
+    
+    var programa: ListaDePropiedades {
+        get {
+            //retorna en realidad una copia del array interno
+            return programaInternoActual
+        }
+        set {
+            limpiar()
+            //cuando se fija un programa desde el exterior se intenta hacer el casting hacia un array de ListadePropiedades
+            if let nuevoPrograma = newValue as? [ListaDePropiedades] {
+                // el programa es valido hasta donde sabemos
+                for sentencia in nuevoPrograma {
+                    if let operando = sentencia as? Double {
+                        //es un operando, un numero
+                        fijarOperando(operando)
+                    } else if let operacion = sentencia as? String {
+                        //sentencia es una operacion matematica
+                        ejecutarOperacion(operacion)
+                    }
+                }
+            }
+            
+        }
+    }
+    
     //Opcional de operacion pendiente
     private var operacionBinariaPendiente: DefinicionOperacionBinaria?
     
     //fija el operador sobre el cual hay que ejecutar una operacion
     func fijarOperando(operando: Double){
         acumulador = operando
+        //almacenamos la operacion actual dentro del programa actual que esta "programando el usuario"
+        //aunque el tipo Double de operando es una Estructura y no un objeto, el compilador internamente hace el "bridge" entre los tipos de datos para que funcione y no de error
+        programaInternoActual.append(operando)
     }
     
     //propiedad calculada de solo lectura donde va a estar el ultimo resultado de alguna operacion
@@ -61,6 +95,8 @@ class CerebroCalculadora {
     
     //Dependiendo de la operacion a ejecutar se realiza la accion correspondiente
     func ejecutarOperacion(simbolo: String) {
+        //almacenamos la operacion actual dentro del programa actual que esta "programando el usuario"
+        programaInternoActual.append(simbolo)
         if let operacion = operaciones[simbolo] {
             switch operacion {
             case .Constante(let numero):
@@ -88,5 +124,10 @@ class CerebroCalculadora {
         }
     }
     
+    private func limpiar() {
+        acumulador = 0.0
+        operacionBinariaPendiente = nil
+        programaInternoActual.removeAll()
+    }
     
 }

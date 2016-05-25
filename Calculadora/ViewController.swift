@@ -29,6 +29,19 @@ class ViewController: UIViewController {
     //La logica de la calculadora esta en la clase CerebroCalculadora
     private var cerebro = CerebroCalculadora()
 
+    private var programaGuardado: CerebroCalculadora.ListaDePropiedades?
+
+    @IBAction func guardarPrograma() {
+        programaGuardado = cerebro.programa
+    }
+    
+    @IBAction func recuperarPrograma() {
+        if programaGuardado != nil {
+            cerebro.programa = programaGuardado!
+            valorEnPantalla = cerebro.resultado
+        }
+    }
+    
     @IBAction func botonDigitoPresionado(sender: UIButton) {
         //Se extrae el valor asociado del Optional(String) retornado por sender.currentTitle
         let textoEnBoton = sender.currentTitle!
